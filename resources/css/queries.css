@@ -1,0 +1,98 @@
+/* large tablet to cpu 1024-1200px */
+@media only screen and (max-width: 1200px) {
+  /* pads borders to contain content */
+  .row { padding: 0 2%; }
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+/* small tablet to large tablet 768px-1023px */
+@media only screen and (max-width: 1023px) {
+  /* overall text size */
+  body { font-size: 18px; }
+  /* reduces white space between sections */
+  section { padding: 60px 0; }
+  /* increases width of p in header */
+  .long-copy { 
+    width: 80%;
+    margin-left: 10%;
+  }
+  /* white space reduction in steps */
+  .steps-box { margin-top: 10px; }
+  .steps-box:last-child { margin-top: 10px; }
+  .works-step { margin-bottom: 40px; }
+  .works-step:last-child { margin-bottom: 60px; }
+  /* increases phone image size */
+  .app-screen { width: 50%; }
+  /* text size reduction */
+  .icon-small { 
+    width: 17px; 
+    margin-right: 5px;
+  }
+  .city-feature { font-size: 90%; }
+  /* reduces space between boxes */
+  .plan-box { 
+    width: 100%; 
+    margin-left: 0%;
+  }
+  /* reduces large letter size in plans */
+  .plan-price { font-size: 250%; }
+  /* increases width of form options */
+  .contact-form { width: 80%; }
+}
+
+/* phone to small tablet 481px-767px */
+@media only screen and (max-width: 767px) {
+  /* overall text size */
+  body { font-size: 16px; }
+  /* reduces white space between sections */
+  section { padding: 30px 0; }
+  /* pads borders to contain content in window */
+  .row, .hero-text-box { padding: 0 4%; }
+  /* stacks columns for appearance */
+  .col { 
+    width: 100%; 
+    margin: 0 0 4% 0;
+  }
+  /* hides nav */
+  .main-nav { display: none; }
+  /* header size reduction */
+  h1 { font-size: 180% }
+  /* header size reduction */
+  h2 { font-size: 150% }
+  /* widens ele to match rest of section */
+  .long-copy { 
+    width: 100%;
+    margin-left: 0;
+  }
+  /* white space reduction in steps */
+  .works-step { margin-bottom: 20px; }
+  .works-step:last-child { margin-bottom: 20px; }
+  /* decreases circle size */
+  .works-step div {
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    margin-right: 15px;
+    font-size: 120%;
+  }
+  /* centers iphone image */
+  .steps-box:first-child { text-align: center; }
+  /* reduces image size */
+  .app-screen { width: 40%; }
+  /* reduces imgs of cities */
+  .box img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+}
+
+/* small phones 0-480px */
+@media only screen and (max-width: 480px) {
+  /* reduces white space between sections */
+  section { padding: 25px 0; }
+  .contact-form { width: 100%; }
+}
