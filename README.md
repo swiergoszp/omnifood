@@ -1,2 +1,2 @@
-# omnifood
-Faux food delivery website built with html and css
+#Omnifood
+A faux food delivery website built with html, css, and javascript.
