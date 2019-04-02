@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/animate.css">
   <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css">
   <link rel="stylesheet" type="text/css" media="screen" href="resources/css/queries.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -20,24 +21,25 @@
     <div class="row">
         <!-- company logo at top -->
         <img src="resources/images/logo-white.png" alt="omnifood logo" class="logo">
+        <img src="resources/images/logo.png" alt="omnifood logo" class="logo-black">
         <!-- nav links -->
         <ul class="main-nav">
           <li><a href="#features">Food delivery</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Our cities</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a href="#steps">How it works</a></li>
+          <li><a href="#cities">Our cities</a></li>
+          <li><a href="#sign-up">Sign up</a></li>
         </ul>
     </div>  
   </nav>
   <!-- wrapper for text and buttons in header -->
   <div class="hero-text-box">
     <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-    <a class="btn btn-full" href="#">I'm Hungry</a>
-    <a class="btn btn-ghost" href="#">Show Me More</a>
+    <a class="btn btn-full scroll-to-plan" href="#">I'm Hungry!</a>
+    <a class="btn btn-ghost scroll-to-start" href="#">Show Me More</a>
   </div>
 </header>
  
-<section class="features" id="features">
+<section class="features waypoints" id="features">
   <!-- row for mission statement -->
   <div class="row">
     <h2>Get food fast &mdash; not fast food</h2>
@@ -47,7 +49,7 @@
     </p>
   </div>
   <!-- row for omnifood features -->
-  <div class="row">
+  <div class="row fade-in">
     <div class="col span-1-of-4 box">
       <i class="icon-big ion-ios-infinite-outline"></i>
       <h3>Up to 365 days/year</h3>
@@ -127,13 +129,13 @@
   </ul>
 </section>
 
-<section class="steps">
+<section class="steps" id="steps">
   <div class="row">
     <h2>How it works &mdash; Simple as 1, 2, 3</h2>
   </div>
   <div class="row">
     <div class="col span-1-of-2 steps-box">
-      <img src="resources/images/app-iPhone.png" alt="omnifood app on iphone" class="app-screen">
+      <img src="resources/images/app-iPhone.png" alt="omnifood app on iphone" class="app-screen slide-in-up">
     </div>
     <div class="col span-1-of-2 steps-box">
       <div class="works-step">
@@ -154,11 +156,11 @@
   </div>
 </section>
 
-<section class="cities">
+<section class="cities" id="cities">
   <div class="row">
     <h2>We're currently in these cities</h2>
   </div>
-  <div class="row">
+  <div class="row fade-in">
     <div class="col span-1-of-4 box">
       <img src="resources/images/lisbon-3.jpg" alt="Lisbon">
       <h3>Lisbon</h3>
@@ -255,13 +257,13 @@
   </div>
 </section>
 
-<section class="sign-up">
+<section class="sign-up" id="sign-up">
   <div class="row">
     <h2>Start eating healthy today</h2>
   </div>
   <div class="row">
     <div class="col span-1-of-3">
-      <div class="plan-box">
+      <div class="plan-box pulse">
         <div>
           <h3>Premium</h3>
           <p class="plan-price">$399 <span>/month</span></p>
@@ -411,10 +413,13 @@
   </div>
 </footer>
 
-</body>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+<script src="resources/js/main.js"></script>
+
+</body>
 
 </html>
