@@ -68,6 +68,7 @@ h2 {
   letter-spacing: 1px;
 }
 
+/* css created line under seation headers */
 h2:after {
   display: block;
   height: 2px;
@@ -95,7 +96,6 @@ h3 {
 }
 
 /* --- LINKS --- */
-
 a:link, a:visited {
   color: #e67e22;
   text-decoration: none;
@@ -234,6 +234,7 @@ header {
   transition: border-bottom 0.2s;
 }
 
+/* creates lines under nav points on hover */
 .main-nav li a:hover, .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
@@ -261,6 +262,19 @@ header {
 .sticky .logo { display: none; }
 
 .sticky .logo-black { display: block; }
+
+/* mobile nav */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
 
 /* ========================================================================================= 
 FEATURES MODS
@@ -334,12 +348,14 @@ HOW IT WORKS MODS
   background-color: #f4f4f4;
 }
 
+/* iphone img */
 .steps-box:first-child {
   text-align: right;
   padding-right: 3%;
   margin-top: 30px;
 }
 
+/* numbered steps */
 .steps-box:last-child {
   padding-left: 3%;
   margin-top: 70px;
@@ -622,17 +638,17 @@ ANIMATION MODS
 ========================================================================================= */
 
 /* makes icons invis before animation */
-.fade-in, .slide-in-up {
+.fade-in, .fade-in-2, .slide-in-up {
   opacity: 0;
   animation-duration: 1s;
 }
 
-.pulse {
+.pulse-ani {
   animation-duration: 1s;
 }
 
 /* makes icons visible again for animation */
-.fade-in.animated, .slide-in-up.animated {
+.fade-in.animated, .fade-in2.animated, .slide-in-up.animated {
   opacity: 1;
 }
 

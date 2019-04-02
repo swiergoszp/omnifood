@@ -89,10 +89,35 @@ $('.slide-in-up').waypoint(function(direction) {
   offset: '50%'
 });
 
-$('.pulse').waypoint(function(direction) {
-  $('.pulse').addClass('animated pulse');
+$('.fade-in-2').waypoint(function(direction) {
+  $('.fade-in-2').addClass('animated fadeIn');
 }, {
   offset: '50%'
+});
+
+$('.pulse-ani').waypoint(function(direction) {
+  $('.pulse-ani').addClass('animated pulse');
+}, {
+  offset: '50%'
+});
+
+// -------------------------------
+// MOBILE NAVIGATION
+// -------------------------------
+
+// reveals nav on mobile on click and change icon based on click
+$('.nav-icon').on('click', function() {
+  const nav = $('.js-nav');
+  const icon = $('.nav-icon i');
+
+  nav.slideToggle(200);
+
+  if (icon.hasClass('ion-navicon-round')) {
+    icon.addClass('ion-close-round').removeClass('ion-navicon-round')
+  } else {
+      icon.addClass('ion-navicon-round').removeClass('ion-close-round')
+  }
+
 });
 
 });

@@ -12,6 +12,16 @@
   <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css">
   <link rel="stylesheet" type="text/css" media="screen" href="resources/css/queries.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+  <link rel="manifest" href="resources/favicons/site.webmanifest">
+  <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -23,12 +33,13 @@
         <img src="resources/images/logo-white.png" alt="omnifood logo" class="logo">
         <img src="resources/images/logo.png" alt="omnifood logo" class="logo-black">
         <!-- nav links -->
-        <ul class="main-nav">
+        <ul class="main-nav js-nav">
           <li><a href="#features">Food delivery</a></li>
           <li><a href="#steps">How it works</a></li>
           <li><a href="#cities">Our cities</a></li>
           <li><a href="#sign-up">Sign up</a></li>
         </ul>
+        <a class="mobile-nav-icon nav-icon"><i class="ion-navicon-round"></i></a>
     </div>  
   </nav>
   <!-- wrapper for text and buttons in header -->
@@ -160,7 +171,7 @@
   <div class="row">
     <h2>We're currently in these cities</h2>
   </div>
-  <div class="row fade-in">
+  <div class="row fade-in-2">
     <div class="col span-1-of-4 box">
       <img src="resources/images/lisbon-3.jpg" alt="Lisbon">
       <h3>Lisbon</h3>
@@ -263,7 +274,7 @@
   </div>
   <div class="row">
     <div class="col span-1-of-3">
-      <div class="plan-box pulse">
+      <div class="plan-box pulse-ani">
         <div>
           <h3>Premium</h3>
           <p class="plan-price">$399 <span>/month</span></p>
